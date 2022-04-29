@@ -1,9 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 :root {
     /* Primary */
     --paleBlue: hsl(225, 100%, 94%);
-    --brightBlue:  hsl(245, 75%, 52%);
+    --brightBlue: hsl(245, 75%, 52%);
     /* Neutral */
     --veryPaleBlue: hsl(225, 100%, 98%);
     --desaturatedBlue: hsl(224, 23%, 55%);
     --darkBlue: hsl(223, 47%, 23%);
 }
+
+body {
+    background: var(--paleBlue) url("/assets/img/pattern-background-mobile.svg") no-repeat;
+    background-size: cover;
+
+
+    font-family: 'Red Hat Display';
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.order_container {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 3px 6px 3px 3px rgba(41, 87, 224, 0.03);
+    
+}
+
+.header img {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 21px;
+}
+
+.content h2 {
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.content > p {
+    margin: 21px;
+    color: var(--desaturatedBlue);
+    overflow-wrap: break-word;
+}
+.content .content_link {
+    margin-top: 18px;
+    text-decoration: none;
+    color: var(--desaturatedBlue);
+}
+.content a {
+    font-weight: 600;
+}
+.content_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--veryPaleBlue);
+    border-radius: 12px;
+    
+    padding: 12px 0;
+    margin-bottom: 21px;
+}
+
+.box_tarif {
+    margin-left: -21px;
+}
+
+.box_tarif p:first-child {
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.box_tarif p:last-child {
+    color: var(--desaturatedBlue);
+}
+
+button {
+    border: none;
+    background-color: var(--brightBlue);
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 900;
+    padding: 9px;
+    filter: drop-shadow(0 6px 6px var(--desaturatedBlue));
+}
+
